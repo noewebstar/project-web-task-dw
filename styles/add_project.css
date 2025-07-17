@@ -192,3 +192,34 @@ textarea {
     margin-bottom: 10px;
 }
 
+@media (max-width: 768px) {
+  .container {
+    margin-top: 90px;
+    padding: 0 20px;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .navbar-left, .navbar-right {
+    padding: 0 20px;
+  }
+
+  .date-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .checkbox {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group-button {
+    justify-content: center;
+  }
+
+  .button-submit {
+    width: 100%;
+  }
+}

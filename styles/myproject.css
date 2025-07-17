@@ -169,7 +169,7 @@ body{
 }
 
 .col{
- width: 80%;
+ width: 100%;
 }
 
 .row {
@@ -177,6 +177,8 @@ body{
   grid-template-columns: 1fr 1fr 1fr;
   gap: 15px;
   margin: 16px 0;
+  grid-template-columns: 1fr 1fr 1fr;
+
 }
 
 .row-flex{
@@ -185,4 +187,84 @@ body{
 
 .space-end{
   justify-content: end;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .row {
+    grid-template-columns: 1fr; /* jadi 1 kolom */
+    gap: 15px;
+  }
+
+  .col {
+    width: 100%; /* biar card lebar penuh di layar mobile */
+  }
+
+  .card {
+    min-height: auto;
+    transform: none;
+  }
+
+  .description-card {
+    height: auto;
+  }
+
+  .btn-edit,
+  .btn-delete {
+    width: 100%;
+  }
+
+  .col-button {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .PROJECT {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .row {
+    grid-template-columns: 1fr; /* ubah dari 3 kolom jadi 1 kolom */
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .row-flex {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .btn-add {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .container-card {
+    padding: 10px;
+  }
+
+  .description-card {
+    height: auto;
+  }
+
+  .btn-edit,
+  .btn-delete {
+    width: 100%;
+  }
+
+  .col-button {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
